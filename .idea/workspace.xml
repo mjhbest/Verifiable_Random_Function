@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51ef8b74-7c1c-4115-a5e4-331e0e0464c0" name="Default Changelist" comment="" />
+    <list default="true" id="51ef8b74-7c1c-4115-a5e4-331e0e0464c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Keys.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VRF_Sortition.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rECVRF.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VRF.py" beforeDir="false" afterPath="$PROJECT_DIR$/ECVRF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VRFTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/VRFTest.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
@@ -18,6 +27,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1X0wcexi23yacoe7IFMW22R4H5q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -27,8 +37,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.VRF">
-    <configuration name="VRF" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.ecvrf_edwards25519_sha512_elligator2_test">
+    <configuration name="ECVRF" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Verifiable_Random_Function" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -40,7 +50,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/VRF.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ECVRF.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -70,9 +80,53 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ecvrf_edwards25519_sha512_elligator2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Verifiable_Random_Function" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ecvrf_edwards25519_sha512_elligator2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ecvrf_edwards25519_sha512_elligator2_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Verifiable_Random_Function" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ecvrf_edwards25519_sha512_elligator2_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.VRF" />
+        <item itemvalue="Python.ecvrf_edwards25519_sha512_elligator2_test" />
+        <item itemvalue="Python.ecvrf_edwards25519_sha512_elligator2" />
+        <item itemvalue="Python.ECVRF" />
         <item itemvalue="Python.VRFTest" />
       </list>
     </recent_temporary>
@@ -103,21 +157,37 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1659" height="257" key="GridCell.Tab.0.bottom" timestamp="1580198038512">
+    <state x="2378" y="305" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580364149208">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2378" y="305" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1680.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1580364149208" />
+    <state width="1659" height="257" key="GridCell.Tab.0.bottom" timestamp="1580360315550">
       <screen x="0" y="23" width="1680" height="958" />
     </state>
-    <state width="1659" height="257" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1580198038512" />
-    <state width="1659" height="257" key="GridCell.Tab.0.center" timestamp="1580198038511">
+    <state width="1659" height="257" key="GridCell.Tab.0.bottom/0.23.1680.958@0.23.1680.958" timestamp="1580203731014" />
+    <state width="1659" height="257" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1580360315550" />
+    <state width="1659" height="257" key="GridCell.Tab.0.center" timestamp="1580360315548">
       <screen x="0" y="23" width="1680" height="958" />
     </state>
-    <state width="1659" height="257" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1580198038511" />
-    <state width="1659" height="257" key="GridCell.Tab.0.left" timestamp="1580198038510">
+    <state width="1659" height="257" key="GridCell.Tab.0.center/0.23.1680.958@0.23.1680.958" timestamp="1580203731013" />
+    <state width="1659" height="257" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1580360315548" />
+    <state width="1659" height="257" key="GridCell.Tab.0.left" timestamp="1580360315547">
       <screen x="0" y="23" width="1680" height="958" />
     </state>
-    <state width="1659" height="257" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1580198038510" />
-    <state width="1659" height="257" key="GridCell.Tab.0.right" timestamp="1580198038511">
+    <state width="1659" height="257" key="GridCell.Tab.0.left/0.23.1680.958@0.23.1680.958" timestamp="1580203731013" />
+    <state width="1659" height="257" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1580360315547" />
+    <state width="1659" height="257" key="GridCell.Tab.0.right" timestamp="1580360315549">
       <screen x="0" y="23" width="1680" height="958" />
     </state>
-    <state width="1659" height="257" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1580198038511" />
+    <state width="1659" height="257" key="GridCell.Tab.0.right/0.23.1680.958@0.23.1680.958" timestamp="1580203731014" />
+    <state width="1659" height="257" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1580360315549" />
+    <state x="341" y="141" key="SettingsEditor" timestamp="1580292197532">
+      <screen x="0" y="23" width="1680" height="958" />
+    </state>
+    <state x="341" y="141" key="SettingsEditor/1680.23.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1580292197532" />
+    <state x="2305" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1580376558013">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2305" y="258" width="670" height="676" key="search.everywhere.popup/1680.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1580376558013" />
   </component>
 </project>
