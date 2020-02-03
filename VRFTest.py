@@ -1,17 +1,15 @@
-from ECVRF import  *
-from VRF_Sortition import *
-from random  import randint
+import VRF_Sortition
 
 
 class Test:
     def __init__(self,fd):
-        self.samplelst = str(fd.read).split()
+        self.samplelst = str(fd.read)
         print("Sample List : {}".format(self.samplelst))
 
     def test(self):
-        sortition = Sortition()
-        pick = sortition.pickN(n)
-        print("Picked Member : {} , PrivateKey : {} , Proof : {} ".format(pick[0],pick.key,pick[1]))
+        sortition = Sortition(self.samplelst,1)
+        pick = sortition.pick_winner()
+        print("Picked Members : {} , PrivateKey : {} , Proof : {} ".format(pick,sortition.Key.PublicKey,sortition.Proof))
         print("Verify?? : {}".format(sortition.verify_sortition(pick,pick[2])))
 
 if __name__ == '__main__':

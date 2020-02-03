@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51ef8b74-7c1c-4115-a5e4-331e0e0464c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Keys.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VRF_Sortition.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rECVRF.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VRF.py" beforeDir="false" afterPath="$PROJECT_DIR$/ECVRF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ECVRF.py" beforeDir="false" afterPath="$PROJECT_DIR$/ECVRF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Keys.py" beforeDir="false" afterPath="$PROJECT_DIR$/Keys.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VRFTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/VRFTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VRF_Sortition.py" beforeDir="false" afterPath="$PROJECT_DIR$/VRF_Sortition.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -37,7 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.ecvrf_edwards25519_sha512_elligator2_test">
+  <component name="RunManager" selected="Python.VRFTest">
     <configuration name="ECVRF" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Verifiable_Random_Function" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -124,10 +122,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.VRFTest" />
         <item itemvalue="Python.ecvrf_edwards25519_sha512_elligator2_test" />
         <item itemvalue="Python.ecvrf_edwards25519_sha512_elligator2" />
         <item itemvalue="Python.ECVRF" />
-        <item itemvalue="Python.VRFTest" />
       </list>
     </recent_temporary>
   </component>
@@ -161,33 +159,42 @@
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
     <state x="2378" y="305" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1680.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1580364149208" />
-    <state width="1659" height="257" key="GridCell.Tab.0.bottom" timestamp="1580360315550">
-      <screen x="0" y="23" width="1680" height="958" />
+    <state width="1899" height="304" key="GridCell.Tab.0.bottom" timestamp="1580461994049">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1659" height="257" key="GridCell.Tab.0.bottom/0.23.1680.958@0.23.1680.958" timestamp="1580203731014" />
+    <state width="1899" height="304" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1580461994049" />
+    <state width="1659" height="257" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.23.1680.958@1680.0.1920.1080" timestamp="1580438587116" />
     <state width="1659" height="257" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1580360315550" />
-    <state width="1659" height="257" key="GridCell.Tab.0.center" timestamp="1580360315548">
-      <screen x="0" y="23" width="1680" height="958" />
+    <state width="1899" height="304" key="GridCell.Tab.0.center" timestamp="1580461994045">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1659" height="257" key="GridCell.Tab.0.center/0.23.1680.958@0.23.1680.958" timestamp="1580203731013" />
+    <state width="1899" height="304" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1580461994045" />
+    <state width="1659" height="257" key="GridCell.Tab.0.center/1680.0.1920.1080/0.23.1680.958@1680.0.1920.1080" timestamp="1580438587115" />
     <state width="1659" height="257" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1580360315548" />
-    <state width="1659" height="257" key="GridCell.Tab.0.left" timestamp="1580360315547">
-      <screen x="0" y="23" width="1680" height="958" />
+    <state width="1899" height="304" key="GridCell.Tab.0.left" timestamp="1580461994044">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1659" height="257" key="GridCell.Tab.0.left/0.23.1680.958@0.23.1680.958" timestamp="1580203731013" />
+    <state width="1899" height="304" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1580461994044" />
+    <state width="1659" height="257" key="GridCell.Tab.0.left/1680.0.1920.1080/0.23.1680.958@1680.0.1920.1080" timestamp="1580438587114" />
     <state width="1659" height="257" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1580360315547" />
-    <state width="1659" height="257" key="GridCell.Tab.0.right" timestamp="1580360315549">
-      <screen x="0" y="23" width="1680" height="958" />
+    <state width="1899" height="304" key="GridCell.Tab.0.right" timestamp="1580461994047">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1659" height="257" key="GridCell.Tab.0.right/0.23.1680.958@0.23.1680.958" timestamp="1580203731014" />
+    <state width="1899" height="304" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1580461994047" />
+    <state width="1659" height="257" key="GridCell.Tab.0.right/1680.0.1920.1080/0.23.1680.958@1680.0.1920.1080" timestamp="1580438587115" />
     <state width="1659" height="257" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1580360315549" />
     <state x="341" y="141" key="SettingsEditor" timestamp="1580292197532">
       <screen x="0" y="23" width="1680" height="958" />
     </state>
     <state x="341" y="141" key="SettingsEditor/1680.23.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1580292197532" />
-    <state x="2305" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1580376558013">
-      <screen x="1680" y="23" width="1920" height="1057" />
+    <state x="2305" y="240" width="670" height="691" key="search.everywhere.popup" timestamp="1580459759934">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
+    <state x="2305" y="240" width="670" height="691" key="search.everywhere.popup/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1580459759934" />
     <state x="2305" y="258" width="670" height="676" key="search.everywhere.popup/1680.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1580376558013" />
   </component>
 </project>
