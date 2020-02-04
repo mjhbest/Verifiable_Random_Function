@@ -389,8 +389,7 @@ def _get_secret_scalar_and_public_key(SK):
        secret_scalar is an integer; public_key is an encoded point string
     """
     h = bytearray(_hash(SK)[0:32])
-    h[31] = int((h[31] & 0x7f) | 0x40)
-    h[0] = int(h[0] & 0xf8)
+    -
     secret_int = int.from_bytes(h, 'little')
     public_point = _scalar_multiply(P=BASE, e=secret_int)
     public_string = _encode_point(public_point)

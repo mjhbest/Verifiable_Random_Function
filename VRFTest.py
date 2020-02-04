@@ -1,4 +1,4 @@
-import VRF_Sortition
+from VRF_Sortition import Sortition
 
 
 class Test:
@@ -7,8 +7,8 @@ class Test:
         print("Sample List : {}".format(self.samplelst))
 
     def test(self):
-        sortition = Sortition(self.samplelst,1)
-        pick = sortition.pick_winner()
+        sortition = Sortition()
+        pick = sortition.pick_winner(self.samplelst,1)
         print("Picked Members : {} , PrivateKey : {} , Proof : {} ".format(pick,sortition.Key.PublicKey,sortition.Proof))
         print("Verify?? : {}".format(sortition.verify_sortition(pick,pick[2])))
 

@@ -1,4 +1,3 @@
-import
 import nacl.signing
 
 class Key:
