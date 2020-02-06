@@ -1,7 +1,8 @@
 class Point:
     b = 7
-    def __init__(self, y = BASEy, x):
+    def __init__(self, y = BASEy, x= None):
         self.y = BASEy
+        self.x = x
         if y == BASEy:
             self.x = from_y(BASEy).x
 
