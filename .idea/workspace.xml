@@ -33,28 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Python.Elliptic_Arithmetic">
-    <configuration name="ECVRF" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Verifiable_Random_Function" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ECVRF.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.lol">
     <configuration name="Elliptic_Arithmetic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Verifiable_Random_Function" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,13 +118,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="lol" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Verifiable_Random_Function" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/lol.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.lol" />
         <item itemvalue="Python.Elliptic_Arithmetic" />
         <item itemvalue="Python.VRFTest" />
         <item itemvalue="Python.ecvrf_edwards25519_sha512_elligator2_test" />
         <item itemvalue="Python.ecvrf_edwards25519_sha512_elligator2" />
-        <item itemvalue="Python.ECVRF" />
       </list>
     </recent_temporary>
   </component>
@@ -179,32 +179,32 @@
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
     <state x="2378" y="305" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1680.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1580364149208" />
-    <state width="1899" height="52" key="GridCell.Tab.0.bottom" timestamp="1580799612793">
+    <state width="1878" height="322" key="GridCell.Tab.0.bottom" timestamp="1581048670539">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1659" height="257" key="GridCell.Tab.0.bottom/0.23.1680.958@0.23.1680.958" timestamp="1580203731014" />
-    <state width="1899" height="52" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1580799612793" />
+    <state width="1878" height="322" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1581048670539" />
     <state width="1659" height="257" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.23.1680.958@1680.0.1920.1080" timestamp="1580438587116" />
     <state width="1659" height="257" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1580360315550" />
-    <state width="1899" height="52" key="GridCell.Tab.0.center" timestamp="1580799612792">
+    <state width="1878" height="322" key="GridCell.Tab.0.center" timestamp="1581048670537">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1659" height="257" key="GridCell.Tab.0.center/0.23.1680.958@0.23.1680.958" timestamp="1580203731013" />
-    <state width="1899" height="52" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1580799612792" />
+    <state width="1878" height="322" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1581048670537" />
     <state width="1659" height="257" key="GridCell.Tab.0.center/1680.0.1920.1080/0.23.1680.958@1680.0.1920.1080" timestamp="1580438587115" />
     <state width="1659" height="257" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1580360315548" />
-    <state width="1899" height="52" key="GridCell.Tab.0.left" timestamp="1580799612791">
+    <state width="1878" height="322" key="GridCell.Tab.0.left" timestamp="1581048670537">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1659" height="257" key="GridCell.Tab.0.left/0.23.1680.958@0.23.1680.958" timestamp="1580203731013" />
-    <state width="1899" height="52" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1580799612791" />
+    <state width="1878" height="322" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1581048670537" />
     <state width="1659" height="257" key="GridCell.Tab.0.left/1680.0.1920.1080/0.23.1680.958@1680.0.1920.1080" timestamp="1580438587114" />
     <state width="1659" height="257" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1580360315547" />
-    <state width="1899" height="52" key="GridCell.Tab.0.right" timestamp="1580799612792">
+    <state width="1878" height="322" key="GridCell.Tab.0.right" timestamp="1581048670538">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1659" height="257" key="GridCell.Tab.0.right/0.23.1680.958@0.23.1680.958" timestamp="1580203731014" />
-    <state width="1899" height="52" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1580799612792" />
+    <state width="1878" height="322" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1581048670538" />
     <state width="1659" height="257" key="GridCell.Tab.0.right/1680.0.1920.1080/0.23.1680.958@1680.0.1920.1080" timestamp="1580438587115" />
     <state width="1659" height="257" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1580360315549" />
     <state width="1899" height="375" key="GridCell.Tab.1.bottom" timestamp="1580790936234">
@@ -223,10 +223,10 @@
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1899" height="375" key="GridCell.Tab.1.right/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1580790936233" />
-    <state x="2069" y="132" key="SettingsEditor" timestamp="1580811460664">
+    <state x="2069" y="132" key="SettingsEditor" timestamp="1581316025251">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state x="2069" y="132" key="SettingsEditor/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1580806598784" />
+    <state x="2069" y="132" key="SettingsEditor/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1581316025251" />
     <state x="2069" y="132" key="SettingsEditor/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1580811460664" />
     <state x="2070" y="133" key="SettingsEditor/1680.0.1920.1080/0.23.1680.958@1680.0.1920.1080" timestamp="1580803606114" />
     <state x="341" y="141" key="SettingsEditor/1680.23.1920.1057/0.23.1680.958@0.23.1680.958" timestamp="1580292197532" />
@@ -234,18 +234,33 @@
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="500" height="445" key="SwitcherDM/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1580981271508" />
-    <state x="2445" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580979779875">
+    <state x="2445" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581303803203">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state x="2445" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1580979779875" />
+    <state x="2445" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1581303803203" />
+    <state x="0" y="23" width="1240" height="958" maximized="true" key="dock-window-1" timestamp="1581481330745">
+      <screen x="0" y="23" width="1680" height="958" />
+    </state>
+    <state x="0" y="23" width="1240" height="958" maximized="true" key="dock-window-1/1680.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1581481330745" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1580799659370">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="600" height="424" key="javadoc.popup/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1580799659370" />
-    <state x="2305" y="240" width="670" height="691" key="search.everywhere.popup" timestamp="1580981605826">
+    <state x="2305" y="240" width="670" height="691" key="search.everywhere.popup" timestamp="1581066775453">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state x="2305" y="240" width="670" height="691" key="search.everywhere.popup/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1580981605826" />
+    <state x="2305" y="240" width="670" height="691" key="search.everywhere.popup/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1581066775453" />
     <state x="2305" y="258" width="670" height="676" key="search.everywhere.popup/1680.23.1920.1057/0.23.1680.958@1680.23.1920.1057" timestamp="1580376558013" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ECVRF.py</url>
+          <line>175</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

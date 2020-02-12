@@ -1,10 +1,12 @@
 class Point:
     b = 7
-    def __init__(self, y = BASEy, x= None):
-        self.y = BASEy
+
+    def __init__(self, x=None, y=None): #결과갚 같으려면 Point structure components 도 같아야 할텐데 억지로 맞춰야하나,,,
         self.x = x
-        if y == BASEy:
-            self.x = from_y(BASEy).x
+        self.y = y
+        if x == None:
+            self.x = BASEx
+            self.y = BASEy
 
     def copy(self):
         return Point(self.x, self.y)
@@ -44,7 +46,7 @@ class Point:
         r = Point()
         i = 1
         while i <= n:
-            if i&n:
+            if i & n:
                 r = r.add(p)
             p = p.dbl()
             i <<= 1
@@ -53,12 +55,18 @@ class Point:
     def __str__(self):
         return "({:.3f}, {:.3f})".format(self.x, self.y)
 
+
 def show(s, p):
     print(s, "Zero" if p.is_zero() else p)
 
+
 def from_y(y):
     n = y * y - Point.b
-    x = n**(1./3) if n>=0 else -((-n)**(1./3))
+    x = n ** (1. / 3) if n >= 0 else -((-n) ** (1. / 3))
     return Point(x, y)
 
-BASEy = 1
+
+BASEx = 55066263022277343669578718895168534326250603453777594175500187360389116729240
+BASEy = 32670510020758816978083085130507043184471273380659243275938904335757337482424
+a = 0x00
+b = 0x07
