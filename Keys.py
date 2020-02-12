@@ -1,4 +1,5 @@
 import nacl.signing
+import nacl.encoding
 
 class Key:
     def __init__(self):
@@ -22,6 +23,14 @@ class Signer:
         self.key = nacl.signing.SigningKey.generate()
         self.signature = self.key.sign(bytes(data))
         self.verify_key_hex = self.key.verify_key.encode(encoder=nacl.encoding.HexEncoder)
+
+    def formatting(self):
+        d = {
+            'key' : self.key,
+            'signature' : self.signature,
+            'verifyKey' : self.verify_key_hex
+        }
+        return d
 
 
 

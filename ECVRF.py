@@ -1,4 +1,3 @@
-import pynacl
 import hashlib
 import hmac
 from Elliptic_Arithmetic import Point
@@ -69,15 +68,22 @@ def verify(pubKey, alpha, pi):
 
 # ECVRF Auxiliary Functions
 def decode_proof(pi):
-    G = pi[0:32]
-    c_string = pi[32:]
+    gamma = pi[0:32]
+    c_string = pi[32:48]
+    s_string = pi[48:]
+    G = string_to_point(gamma)
+    if G == "INVALID":
+        return G
+    c = int.from_bytes(c_string, 'little')
+    s = int.from_bytes(s_string, 'little')
+    return G, c, s
 
 
 def get_pubKey(secKey):
-    x = int.from_bytes(secKey[0:32], 'little')  # secret scalar
+    x = int.from_bytes(secKey, 'little')  # secret scalar
     point = Point()
     pubKey = point.mul(x)
-    return (x, pubKey)
+    return x, pubKey
 
 
 def hash_to_curve_try_and_increment(pubKey, alpha):
@@ -164,25 +170,27 @@ def arbitrary_string_to_point(str):
 
 def encode_point(P):
     """Encode point to string containing LSB OF X followed by 254 bits of Y"""
-    return ((P[1] & ((1 << 255) - 1)) + ((P[0] & 1) << 255)).to_bytes(32, 'little')
+    return ((P.y & ((1 << 255) - 1)) + ((P.x & 1) << 255)).to_bytes(32, 'little')
+
 
 def decode_point(s):
     """Decode string containing LSB OF X followed by 254 bits of Y into point. Checks on-curve"""
     y = int.from_bytes(s, 'little') & ((1 << 255) - 1)
-    x = _x_recover(y)
-    if x & 1 != _get_bit(s, 255): x = PRIME - x
-    P = [x, y]
-    if not _is_on_curve(P): raise Exception("decoding point that is not on curve")
+    x = inverse(y)  # case handling for modular
+    # if x & 1 != int.from_bytes(s,'little')>>255): x = PRIME - x
+    P = Point(x, y)  # check required for is_on_curve
     return P
 
 
-def _x_recover(y):
-    """Recover x coordinate from y coordinate"""
-    xx = (y * y - 1) * _inverse(D * y * y + 1)
-    x = pow(xx, (PRIME + 3) // 8, PRIME)
-    if (x * x - xx) % PRIME != 0: x = (x * I) % PRIME
-    if x % 2 != 0: x = PRIME - x
-    return x
+def get_bit(s):
+    b = int.from_bytes(s, 'little')
+    return (b >> 255) & 0x01
+
+
+def inverse(y):
+    """y^2 mod PRIME  = x^3 + 7 mod PRIME"""
+    n = y ** 2 - 7
+    return n % PRIME
 
 
 # Default Values

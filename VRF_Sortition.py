@@ -1,9 +1,7 @@
-import rECVRF
-import pynacl
-from ECVRF import *
-from
+import ECVRF
 from Keys import Key
 import random
+import nacl.encoding
 
 class Sortition:
 
@@ -16,14 +14,15 @@ class Sortition:
         self.Proof = None
 
     def pick_winner(self,participant,n):  ##return (winner_lst, proof_of_winner,key)
+        self.update_sortition(participant, n)
         keys = self.createKey(self.data)
-        self.update_sortition(participant,n)
-        randseed = self.make_random_seed(keys.SecretKey)
+        print("SecretKey : {}".format(keys.SecretKey.formatting()))
+        randseed = self.make_random_seed(keys.SecretKey.formatting()['key'])
         return self.RandomlyPick(randseed,participant)
 
     def update_sortition(self,participant,num):
         self.participant = participant
-        self.data = self.serialize(participent)
+        self.data = self.serialize(participant)
         self.N = num
 
     def createKey(self,data): #Key generation with elliptic curve(ECVRF 25519)
@@ -32,8 +31,15 @@ class Sortition:
         self.Key = keySet
         return keySet
 
-    def serialize(self,participent_list):
-        return participent_list.split().encode('ascii') #example이 string을 받아오니까 우선 split으로 행렬
+    def serialize(self,participant_list):
+
+        return self.concatenate(participant_list).encode('ascii') #example이 string을 받아오니까 우선 split으로 행렬
+
+    def concatenate(self,lst):
+        s = lst[0]
+        for p in lst[1:]:
+            s= s + p
+        return s
 
     def make_random_seed(self, SK):
         hashed = self.ECVRF_hash(SK)

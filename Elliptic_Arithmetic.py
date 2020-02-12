@@ -1,4 +1,4 @@
-class Point:
+class Point():
     b = 7
 
     def __init__(self, x=None, y=None): #결과갚 같으려면 Point structure components 도 같아야 할텐데 억지로 맞춰야하나,,,
