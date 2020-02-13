@@ -14,6 +14,7 @@ class Sortition:
         self.Key = None
         self.Proof = None
 
+
     def pick_winner(self, participant, n):  ##return (winner_lst, proof_of_winner,key)
     """Make random seed with using ECVRF & make winner"""
         self.update_sortition(participant, n)

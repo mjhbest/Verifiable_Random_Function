@@ -168,6 +168,7 @@ def arbitrary_string_to_point(str):
     return string_to_point(bytes([0x02]) + str)
 
 
+
 def encode_point(P):
     """Encode point to string containing LSB OF X followed by 254 bits of Y"""
     return ((P.y & ((1 << 255) - 1)) + ((P.x & 1) << 255)).to_bytes(32, 'little')
