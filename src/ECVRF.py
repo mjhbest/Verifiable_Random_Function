@@ -36,17 +36,22 @@ def prove(secKey, alpha):
 
 
 def proof_to_hash(pi):
-    # 1. D = ECVRF_decode_proof(pi_string)AA
+    # 1. D = ECVRF_decode_proof(pi_string)
     D = decode_proof(pi)
+
     # 2. If D is "INVALID", output "INVALID" and stop
     if D == "INVALID":
         return "INVALID"
+
     # 3. (Gamma, c, s) = D
     (G, c, s) = D
+
     # 4. three_string = 0x03 = int_to_string(3, 1), a single octet with value 3
     t_string = bytes([0x03])
+
     # 5. beta_string = Hash(suite_string || three_string || point_to_string(cofactor * Gamma))
     beta_string = Hash(SUITE_STRING + t_string + point_to_string(G.mul(8)))
+
     # 6. Output beta_string
     return beta_string
 
@@ -100,7 +105,7 @@ def hash_to_curve_try_and_increment(pubKey, alpha):
         # A.ctr_string = int_to_string(ctr, 1)
         c_str = int_to_string(ctr, 1)
         # B.hash_string = Hash(suite_string | | one_string | | PK_string | | alpha_string | | ctr_string)
-        h_string = Hash(SUITE_STRING + one_string + PK_string + alpha + c_str)  # concatenate
+        h_string = Hash(SUITE_STRING + one_string)  # concatenate
         # C.H = arbitrary_string_to_point(hash_string)
         H = arbitrary_string_to_point(h_string)
         # D.If H is not "INVALID" and cofactor > 1, set H = cofactor * H
@@ -118,19 +123,19 @@ def hash_point(H, G, PB, PH):
         str = str + point_to_string(p)
     c_string = Hash(str)
     truncated_string = c_string[0:16]
-    c = int.from_bytes(truncated_string, 'little')
-    return c
+    return int.from_bytes(truncated_string, 'little')
+
 
 
 def nonce_generartion(SK, h_string):
     hash_data = Hash(h_string)
-    V = 0x0101010101010101010101010101010101010101010101010101010101010101
-    K = 0x0000000000000000000000000000000000000000000000000000000000000000
-    K = hmac.HMAC(K, V + 0x00 + SK + hash_data).digest()
+    V = bytes(0x0101010101010101010101010101010101010101010101010101010101010101)
+    K = bytes(0x0000000000000000000000000000000000000000000000000000000000000000)
+    K = hmac.HMAC(K, V + bytes(0x00) + SK + hash_data).digest()
     V = hmac.HMAC(K, V).digest()
-    K = hmac.HMAC(K, V + 0x01 + SK + hash_data).digest()
+    K = hmac.HMAC(K, V + bytes(0x01) + SK + hash_data).digest()
     V = hmac.HMAC(K, V).digest()
-    T = 0x00
+    T = bytes(0x00)
     while len(T) < 32:
         V = hmac.HMAC(K, V)
         T = T + V
@@ -138,7 +143,7 @@ def nonce_generartion(SK, h_string):
         if k < 32:
             return K
         else:
-            K = hmac.HMAC(K, V + 0x00)
+            K = hmac.HMAC(K, V + bytes(0x00))
             V = hmac.HMAC(K, V)
 
 
@@ -166,7 +171,6 @@ def hex_to_bytes(h):
 
 def arbitrary_string_to_point(str):
     return string_to_point(bytes([0x02]) + str)
-
 
 
 def encode_point(P):

@@ -7,16 +7,15 @@ import nacl.encoding
 class Sortition:
     currentKey = None
 
-    def __init__(self):  # 일단은 Num 제외
+    def __init__(self, id):  # 일단은 Num 제외
         self.participant = None
-        self.data = None
+        self.data = id
         self.N = 1
         self.Key = None
         self.Proof = None
 
-
-    def pick_winner(self, participant, n):  ##return (winner_lst, proof_of_winner,key)
-    """Make random seed with using ECVRF & make winner"""
+    def pick_winner(self, participant, n):
+        # Make random seed with using ECVRF & make winner
         self.update_sortition(participant, n)
         keys = self.createKey(self.data)
         print("SecretKey : {}".format(keys.SecretKey.formatting()))
@@ -24,19 +23,16 @@ class Sortition:
         return self.RandomlyPick(randseed, participant)
 
     def update_sortition(self, participant, num):
+        # Update Instances
         self.participant = participant
-        self.data = self.serialize(participant)
         self.N = num
 
-    def createKey(self, data):  # Key generation with elliptic curve(ECVRF 25519)
+    def createKey(self, data):
+        # Key generation with elliptic curve(ECVRF 25519)
         keySet = Key()
         keySet.create_secretKey(data)
         self.Key = keySet
         return keySet
-
-    def serialize(self, participant_list):
-
-        return self.concatenate(participant_list).encode('ascii')  # example이 string을 받아오니까 우선 split으로 행렬
 
     def concatenate(self, lst):
         s = lst[0]

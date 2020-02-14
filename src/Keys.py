@@ -26,7 +26,7 @@ class Signer:
 
     def formatting(self):
         d = {
-            'key' : self.key,
+            'key' : bytes(self.key),
             'signature' : self.signature,
             'verifyKey' : self.verify_key_hex
         }
